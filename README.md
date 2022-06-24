@@ -6,4 +6,6 @@ dagger-hilt DI
 mvvm architecture
 Room DB
 Coroutines 
+Retrofit
+Data/View Binding
 
