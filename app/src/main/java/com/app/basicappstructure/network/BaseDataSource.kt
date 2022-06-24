@@ -1,4 +1,4 @@
-
+package com.app.basicappstructure.network
 import android.util.Log
 import com.app.basicappstructure.utils.NoInternetException
 import com.app.basicappstructure.utils.Resource

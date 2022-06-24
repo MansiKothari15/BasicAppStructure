@@ -1,4 +1,4 @@
-
+package com.app.basicappstructure.network
 import com.app.basicappstructure.data.response.LoginResponse
 import com.app.basicappstructure.data.response.SignUpResponse
 import com.app.basicappstructure.network.Constants.USERS_LOG_IN

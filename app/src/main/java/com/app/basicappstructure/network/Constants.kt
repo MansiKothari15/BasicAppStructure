@@ -5,7 +5,8 @@ object Constants {
     const val DATABASE_NAME = ""
 
     //Api End Points
-
+    const val USERS_LOG_IN = "users"
+    const val USERS_SIGN_UP = "signup"
 
     /*file related constants*/
     const val FILE_NAME_VIDEO = "VID_CAPTURE_"
@@ -22,11 +23,13 @@ object Constants {
     var REQUEST_GET_IMAGE_CAMERA = 2
     val REQUEST_LOCATION_PERMISSION = 3
 
-    //api constants
-    const val USERS_LOG_IN = "ira/index.php?option=com_api\u200B&app=users\u200B&resource=login\u200B&format=raw"
-    const val USERS_SIGN_UP = "ira/index.php?option=com_api\u200B&app=users\u200B&resource=user\u200B&format=raw"
-
     // broadcast
     const val SEND_NOTIFICATION = "send_notification"
+
+    //SharedPref Keys
+    const val AUTH_TOKEN = "authToken"
+    const val JWT_TOKEN = "jwtToken"
+    const val USER_ID = "user_id"
+    const val BASE_URL_NEW = "baseUrlNew"
 
 }
