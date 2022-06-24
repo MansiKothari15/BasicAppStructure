@@ -33,7 +33,12 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures{
+        dataBinding = true
         viewBinding true
+    }
+
+    hilt {
+        enableTransformForLocalTests = true
     }
 }
 
@@ -65,8 +70,21 @@ dependencies {
     kapt "com.github.bumptech.glide:compiler:$glide_version"
 
     //Lifecycle related
-    implementation 'android.arch.lifecycle:extensions:1.1.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    /*implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'*/
+
+    //ViewPager2
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+
+    //Livedata and Viewmodel
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-common:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
+
+    //Activity/Fragment ktx
+    implementation 'androidx.activity:activity-ktx:1.4.0'
+    implementation "androidx.fragment:fragment-ktx:1.3.6"
 
     //Coroutines & Flow
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_flow_version"

@@ -1,10 +1,6 @@
 package com.app.basicappstructure.network
 
 object Constants {
-    const val ARG_PARAM1 = "param1"
-    const val ARG_PARAM2 = "param2"
-    const val ARG_PARAM3 = "param2"
-
     //Database Name
     const val DATABASE_NAME = ""
 
@@ -26,16 +22,11 @@ object Constants {
     var REQUEST_GET_IMAGE_CAMERA = 2
     val REQUEST_LOCATION_PERMISSION = 3
 
-
-
     //api constants
     const val USERS_LOG_IN = "ira/index.php?option=com_api\u200B&app=users\u200B&resource=login\u200B&format=raw"
     const val USERS_SIGN_UP = "ira/index.php?option=com_api\u200B&app=users\u200B&resource=user\u200B&format=raw"
-    const val MENU_LIST = "ira/index.php?option=com_api&app=menulinks&resource=link&format=raw"
-
 
     // broadcast
     const val SEND_NOTIFICATION = "send_notification"
-
 
 }

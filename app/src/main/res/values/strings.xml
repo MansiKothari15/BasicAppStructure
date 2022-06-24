@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Basic App Structure</string>
+
+    <!--Validation messages-->
+    <string name="email_validate">Please enter Email Address</string>
+    <string name="registered_email_validate">Please enter registered Email Address</string>
+    <string name="valid_email_validate">Please enter valid Email Address</string>
+    <string name="password_validate">Please enter Password</string>
+    <string name="invalid_password">Please enter a valid Password</string>
+    <string name="invalid_confirm_password_length">Please enter valid confirm Password</string>
+
 </resources>

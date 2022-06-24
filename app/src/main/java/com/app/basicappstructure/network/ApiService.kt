@@ -1,8 +1,8 @@
 
 import com.app.basicappstructure.data.response.LoginResponse
 import com.app.basicappstructure.data.response.SignUpResponse
-import com.irafinancial.data.remote.Constants.USERS_LOG_IN
-import com.irafinancial.data.remote.Constants.USERS_SIGN_UP
+import com.app.basicappstructure.network.Constants.USERS_LOG_IN
+import com.app.basicappstructure.network.Constants.USERS_SIGN_UP
 import retrofit2.http.FieldMap
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
