@@ -1,4 +1,4 @@
-package com.irafinancial.data.remote
+package com.app.basicappstructure.network
 
 object Constants {
     const val ARG_PARAM1 = "param1"
@@ -36,27 +36,6 @@ object Constants {
 
     // broadcast
     const val SEND_NOTIFICATION = "send_notification"
-
-    //SharedPref Keys
-    const val AUTH_TOKEN = "authToken"
-    const val JWT_TOKEN = "jwtToken"
-    const val USER_ID = "user_id"
-    const val BASE_URL_NEW = "baseUrlNew"
-    const val PASSCODE = "passcode"
-    const val EMAIL = "email"
-    const val USERNAME = "userName"
-    const val ADD = "ADD"
-    const val MEDIUM = "medium"
-    const val SMALL = "small"
-    const val LARGE = "large"
-    const val PERCENTAGE = "Percentage"
-    const val AMOUNT = "Amount"
-    const val IS_ORDER_UPDATE = "isOrderUpdate"
-    const val REDIRECT_FROM = "redirect_from"
-    const val WEB_URL = "web_url"
-    const val FIRST_NAME = "first_name"
-    const val LAST_NAME = "last_name"
-    const val MIDDLE_NAME = "middle_name"
 
 
 }
