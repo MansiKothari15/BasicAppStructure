@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit
 object ApiModule {
 
     // private const val BASE_URL = "https://possoft.io/api/v1/"
-    public const val BASE_URL = "https://panchsoft.com/development/"  // for BOLD POS
+//    public const val BASE_URL = "https://panchsoft.com/development/"  // for BOLD POS
 
     /*@Singleton
     @Provides
@@ -42,14 +42,13 @@ object ApiModule {
 
         ): ApiService =
         Retrofit.Builder()
-            .baseUrl(prefProvider.getValue(BASE_URL_NEW, BASE_URL))
+            .baseUrl("https://api-dev.learnmap.com/api/v6/")
             .client(
                 OkHttpClient.Builder().connectTimeout(10000, TimeUnit.MILLISECONDS)
                     .addInterceptor { chain ->
                         chain.proceed(chain.request().newBuilder().also {
                             val authToken = prefProvider.getValue(AUTH_TOKEN, "")
                             println("authToken ::  $authToken")
-                            println("BASE_URL :: ${prefProvider.getValue(BASE_URL_NEW, BASE_URL)}")
                             if (authToken.isNotEmpty())
                                 it.addHeader("TOKEN", authToken)
 

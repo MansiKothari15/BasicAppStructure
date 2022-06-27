@@ -32,6 +32,7 @@ class LoginViewModel@Inject constructor(
     val data: LiveData<Event<LoginResponse?>> = _data
 
     fun login(){
+        _showProgress.value = Event(true)
         val data = HashMap<String, String>()
         data["username"] = loginDetails.value?.emailAddress.toString().trim()
         data["password"] = loginDetails.value?.password.toString().trim()
